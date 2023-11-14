@@ -26,7 +26,7 @@ resource "azurerm_subnet" "test" {
 
 module "aks_without_monitor" {
   source  = "Azure/aks/azurerm"
-  version = "6.5.0"
+  version = "7.5.0"
 
   prefix                 = "prefix2-${random_id.prefix.hex}"
   resource_group_name    = local.resource_group.name
